@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- nav container -->
-    <nav class="container relative p-6 mx-auto">
+    <nav class="relative pt-10 px-5 lg:pt-12 lg:px-4 mx-auto max-w-[72rem]">
       <!-- flex container for all items -->
       <div class="flex items-center justify-between">
         <!-- flex container for logo/menu -->
@@ -39,59 +39,89 @@
             >Sign Up</a
           >
         </div>
-        <!-- @todo hamburger Button -->
+        <!-- hamburger Button -->
+        <button
+          id="menu-btn"
+          class="block hamburger lg:hidden focus:outline-none"
+        >
+          <span class="hamburger-top" aria-hidden></span>
+          <span class="hamburger-middle" aria-hidden></span>
+          <span class="hamburger-bottom" aria-hidden></span>
+        </button>
       </div>
-      <!-- @todo mobile menu -->
+      <!--mobile menu -->
+      <div
+        class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100"
+        id="menu"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+        >
+          <a href="#" class="w-full text-center">Features</a
+          ><a href="#" class="w-full text-center">Pricing</a
+          ><a href="#" class="w-full text-center">Resources</a>
+          <a href="#" class="w-full pt-6 text-center border-t border-gray-400"
+            >Login</a
+          >
+          <a href="#" class="w-full py-3 text-center rounded-full bg-cyan"
+            >Sign Up</a
+          >
+        </div>
+      </div>
     </nav>
     <!-- hero section -->
     <section id="hero">
       <!-- hero container -->
-      <div class="container flex flex-col-reverse p-6 mx-auto lg:flex-row">
+      <div
+        class="max-lg:mt-7 max-w-[90rem] lg:pt-20 lg:justify-end lg:px-0 flex flex-col-reverse lg:p-6 mx-auto lg:flex-row"
+      >
         <!-- content container -->
-        <div class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:w-1/2 xl:mb-52">
+        <div
+          class="flex mb-44 flex-col flex-1 space-y-10 lg:space-y-0 lg:pl-40 lg:mt-16 max-lg:p-6 lg:mb-[13.5rem]"
+        >
           <h1
-            class="text-5xl font-bold text-center lg:text-6xl lg:max-w-md lg:text-left"
+            class="text-[2.5rem] leading-[3rem] font-bold text-center lg:leading-[5.5rem] lg:text-[4.8rem] lg:max-w-xl lg:text-left"
           >
             More than just shorter links
           </h1>
           <p
-            class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left"
+            class="text-[1.2rem] text-center text-gray-400 lg:text-xl lg:max-w-lg lg:text-left max-md:!mt-2 lg:!mt-2"
           >
-            Build your brand's recognition and datailed insights on how your
+            Build your brand's recognition and get detailed insights on how your
             links are performing.
           </p>
-          <div class="mx-auto lg:mx-0">
+          <div class="mx-auto lg:mx-0 lg:!mt-14">
             <a
               href="#"
-              class="px-10 py-5 text-2xl font-bold text-white rounded-full bg-cyan lg:py-4 hover:opacity-70"
+              class="px-10 py-5 text-xl font-bold text-white rounded-full bg-cyan lg:py-4 hover:opacity-70"
               >Get Started</a
             >
           </div>
         </div>
         <!-- image -->
-        <div class="mx-auto mb-24 md:w-180 lg:mb-0 lg:w-1/2">
-          <img src="/images/illustration-working.svg" alt="" />
-        </div>
+        <div
+          class="max-lg:h-[21rem] md:max-lg:mx-auto max-md:bg-cover mb-4 md:w-[40rem] md:max-lg:bg-cover lg:mb-0 lg:w-5/12 working-illustration"
+        ></div>
       </div>
     </section>
     <!-- shorten section -->
     <section id="shorten" class="relative bg-gray-100">
       <!-- shorten container -->
-      <div class="max-w-4xl p-6 mx-auto space-y-6">
+      <div class="max-w-6xl mx-auto space-y-6 p-7 lg:p-6">
         <!-- form -->
         <form
           action=""
           id="link-form"
-          class="relative flex flex-col w-full p-10 -mt-20 space-y-4 rounded-lg bg-darkViolet md:flex-row md:space-y-0 md:space-x-3"
+          class="relative px-6 py-5 flex flex-col w-full space-y-4 rounded-lg -mt-28 lg:px-16 lg:py-14 bg-darkViolet bg-[url('/images/bg-shorten-mobile.svg')] lg:bg-[url('/images/bg-shorten-desktop.svg')] bg-no-repeat md:flex-row md:space-y-0 md:space-x-3 lg:space-x-6"
         >
           <input
             type="text"
-            class="flex-1 p-3 placeholder-yellow-500 border-2 rounded-lg focus:outline-none"
-            placeholder="Shorten a link here"
+            class="flex-1 p-3 border-2 rounded-lg placeholder-clrNeutral-200 lg:p-4 focus:outline-none"
+            placeholder="Shorten a link here..."
             id="link-input"
           />
           <button
-            class="px-10 py-3 text-white rounded-lg bg-cyan hover:bg-cyan/40 focus:outline-none md:py-2"
+            class="px-10 py-3 font-bold text-white rounded-lg bg-cyan hover:bg-cyan/40 lg:text-xl focus:outline-none md:py-2"
           >
             Shorten It!
           </button>
@@ -99,11 +129,11 @@
           <!-- error messages -->
           <div
             id="err-msg"
-            class="absolute text-sm italic left-7 bottom-3 text-red"
+            class="absolute text-sm italic left-10 bottom-7 text-red"
           ></div>
         </form>
 
-        <!-- link-1 -->
+        <!-- link-1
         <div
           class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
         >
@@ -122,7 +152,7 @@
             </button>
           </div>
         </div>
-        <!-- link-2 -->
+        link-2
         <div
           class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
         >
@@ -141,7 +171,7 @@
             </button>
           </div>
         </div>
-        <!-- link-3 -->
+        link-3
         <div
           class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
         >
@@ -159,15 +189,19 @@
               Copy
             </button>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <!-- stats section -->
-    <section id="stats" class="py-24 bg-gray-100">
+    <section id="stats" class="py-16 bg-gray-100 lg:py-24">
       <div class="container px-3 mx-auto">
-        <h2 class="mb-6 text-4xl font-bold text-center">Advanced Statistics</h2>
-        <p class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md">
+        <h2 class="mb-6 text-[1.6rem] font-bold text-center lg:text-4xl">
+          Advanced Statistics
+        </h2>
+        <p
+          class="max-w-xs mx-auto text-center text-gray-400 lg:text-lg md:max-w-xl"
+        >
           Track how your links are performing across the web with our adavanced
           statistics dashboard.
         </p>
@@ -177,7 +211,7 @@
     <!-- feature box section -->
     <section id="features" class="pb-32 bg-gray-100">
       <div
-        class="container relative flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7"
+        class="max-w-[65rem] relative flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7"
       >
         <!-- horizontal -->
         <div
@@ -264,16 +298,16 @@
     <!-- CTA section -->
     <section
       id="cta"
-      class="py-24 bg-darkViolet bg-[url('/images/bg-boost-desktop.svg')] bg-no-repeat bg-cover"
+      class="py-20 lg:py-24 bg-darkViolet bg-[url('/images/bg-boost-desktop.svg')] bg-no-repeat bg-cover"
     >
-      <div class="flex flex-col p-2 space-y-6">
+      <div class="flex flex-col space-y-6 lg:p-2">
         <h5
-          class="mx-auto space-y-10 text-4xl font-bold text-center text-white"
+          class="mx-auto space-y-10 text-[1.625rem] font-bold text-center text-white lg:text-4xl"
         >
           Boost your links today
         </h5>
         <button
-          class="px-10 py-5 mx-auto text-2xl font-bold text-white rounded full bg-cyan hover:bg-cyan/40 md:text-base md:py-3 focus:outline-none"
+          class="px-10 py-4 mx-auto text-lg font-bold text-white rounded-full lg:px-10 lg:py-5 bg-cyan hover:brightness-125 md:text-base md:py-3 focus:outline-none"
         >
           Get Started
         </button>
@@ -288,10 +322,10 @@
         <img src="/images/logo.svg" alt="" />
         <!-- menu container -->
         <div
-          class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0"
+          class="flex flex-col w-1/2 space-y-16 md:space-x-20 md:flex-row md:space-y-0"
         >
           <!-- menu-1 -->
-          <div class="flex flex-col items-center w-full md:items-starts">
+          <div class="flex flex-col items-center w-full md:items-start">
             <div class="mb-5 font-bold text-white capitalize">Features</div>
 
             <div class="flex flex-col items-center space-y-3 md:items-start">
@@ -309,7 +343,7 @@
 
           <!-- menu-2 -->
 
-          <div class="flex flex-col items-center w-full md:items-starts">
+          <div class="flex flex-col items-center w-full md:items-start">
             <div class="mb-5 font-bold text-white capitalize">Resources</div>
 
             <div class="flex flex-col items-center space-y-3 md:items-start">
@@ -326,7 +360,7 @@
           </div>
 
           <!-- menu -3 -->
-          <div class="flex flex-col items-center w-full md:items-starts">
+          <div class="flex flex-col items-center w-full md:items-start">
             <div class="mb-5 font-bold text-white capitalize">Company</div>
 
             <div class="flex flex-col items-center space-y-3 md:items-start">
