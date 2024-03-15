@@ -2,15 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="shortly" />
     <title>Shortly</title>
   </head>
   <body>
-    <h1 class="text-xl font-bold text-emerald-600">
-      This is a vite + vanilla js + tailwind project
-    </h1>
+    <!-- nav container -->
+    <nav class="container relative p-6 mx-auto">
+      <!-- flex container for all items -->
+      <div class="flex items-center justify-between">
+        <!-- flex container for logo/menu -->
+        <div class="flex items-center space-x-20">
+          <!-- logo -->
+          <img src="/images/logo.svg" alt="" />
+          <!-- left menu -->
+          <div class="hidden space-x-8 font-bold lg:flex">
+            <a class="text-clrNeutral-200 hover:text-clrNeutral-400" href="#"
+              >Features</a
+            >
+            <a class="text-clrNeutral-200 hover:text-clrNeutral-400" href="#"
+              >Pricing</a
+            >
+            <a class="text-clrNeutral-200 hover:text-clrNeutral-400" href="#"
+              >Resources</a
+            >
+          </div>
+        </div>
+
+        <!-- right buttons menu -->
+        <div class="items-center hidden space-x-6 lg:flex text-clrNeutral-200">
+          <div class="hover:text-clrNeutral-400">Login</div>
+          <a
+            href="#"
+            class="px-8 py-3 font-bold text-white rounded-full bg-cyan hover:opacity-70"
+            >Sign Up</a
+          >
+        </div>
+        <!-- @todo hamburger menu -->
+      </div>
+      <!-- @todo mobile menu -->
+    </nav>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
