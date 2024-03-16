@@ -132,3 +132,99 @@ img {
     transform: rotate(-180deg) translateX(25px);
   }
 }
+
+.generated-container {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 0.5rem;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 48em) {
+  .generated-container {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.generated-container .long-url {
+  font-weight: 700;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 48em) {
+  .generated-container .long-url {
+    color: hsl(var(--clr-neutral-400));
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity));
+    border-bottom-width: 2px;
+  }
+}
+
+.generated-url-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  flex: 1 1 0%;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 48em) {
+  .generated-url-container {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.generated-url-container .shorturl {
+  font-weight: 700;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 48em) {
+  .generated-url-container .shorturl {
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    color: hsl(var(--clr-cyan));
+  }
+}
+
+.generated-url-container button {
+  align-self: stretch;
+  padding: 0.5rem /* 8px */;
+  padding-left: 2rem /* 32px */;
+  padding-right: 2rem /* 32px */;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  border-radius: 0.5rem /* 8px */;
+}
+
+.bg-customcyan {
+  background-color: hsl(var(--clr-cyan));
+}
+
+.bg-customblack {
+  background-color: black;
+}
+
+.generated-url-container button:hover {
+  opacity: 0.7;
+}
+
+.generated-url-container button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}

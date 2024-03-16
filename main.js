@@ -64,23 +64,22 @@ function displayShorten() {
   generatedLinks.innerHTML = savedData
     .map((data) => {
       return `<div
-            class="flex flex-col justify-between w-full p-6 bg-white rounded-lg md:items-center md:flex-row"
+            class="generated-container"
           >
             <p
-              class="font-bold text-left truncate max-md:text-sm max-md:border-b-2 max-md:border-gray-200 lg:text-center text-clrNeutral-400 md:text-center"
+              class="long-url"
             >
               ${data.longUrl}
             </p>
 
             <div
-              class="flex flex-col items-start justify-end flex-1 space-y-2 md:items-center md:space-x-4 md:flex-row md:space-y-0"
+              class="generated-url-container"
             >
               <p
-                class="font-bold text-left truncate max-md:text-sm text-cyan"
+                class="shorturl"
                 >${data.shortUrl}</p
               >
-              <button
-                class="self-stretch p-2 px-8 text-white rounded-lg bg-cyan hover:opacity-70 focus:outline-none"
+              <button class="bg-customcyan"
               >
                 Copy
               </button>
@@ -160,12 +159,12 @@ async function handleCopy(e) {
     console.log(e.message);
   }
 
-  copyBtn.classList.remove("bg-cyan");
-  copyBtn.classList.add("bg-black");
+  copyBtn.classList.remove("bg-customcyan");
+  copyBtn.classList.add("bg-customblack");
   copyBtn.innerHTML = "Copied!";
   setTimeout(() => {
-    copyBtn.classList.remove("bg-black");
-    copyBtn.classList.add("bg-cyan");
+    copyBtn.classList.remove("bg-customblack");
+    copyBtn.classList.add("bg-customcyan");
     copyBtn.innerHTML = "Copy";
   }, 4000);
 }
