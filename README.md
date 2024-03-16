@@ -29,10 +29,11 @@ Users should be able to:
 ### Screenshot
 
 ![](./design/desktop-preview.jpg)
+![](./design/lighthouse.png)
 
 ### Links
 
-- Solution URL: [click here](https://your-solution-url.com)
+- Solution URL: [click here](https://www.frontendmentor.io/solutions/shortlyurlshortenertailwind-vanilla-js-CQuc3SzBJA)
 - Live Site URL: [click here](https://jithin-b-p-shortly.netlify.app/)
 
 ## My process
