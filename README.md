@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [click here](https://your-solution-url.com)
+- Live Site URL: [click here](https://jithin-b-p-shortly.netlify.app/)
 
 ## My process
 
