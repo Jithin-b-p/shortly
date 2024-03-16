@@ -19,13 +19,19 @@
             <img src="/images/logo.svg" alt="" />
             <!-- left menu -->
             <div class="hidden space-x-8 font-bold lg:flex">
-              <a class="text-clrNeutral-200 hover:text-clrNeutral-400" href="#"
+              <a
+                class="text-clrNeutral-200 hover:text-clrNeutral-400 focus-visible:outline-black"
+                href="#"
                 >Features</a
               >
-              <a class="text-clrNeutral-200 hover:text-clrNeutral-400" href="#"
+              <a
+                class="text-clrNeutral-200 hover:text-clrNeutral-400 focus-visible:outline-black"
+                href="#"
                 >Pricing</a
               >
-              <a class="text-clrNeutral-200 hover:text-clrNeutral-400" href="#"
+              <a
+                class="text-clrNeutral-200 hover:text-clrNeutral-400 focus-visible:outline-black"
+                href="#"
                 >Resources</a
               >
             </div>
@@ -35,20 +41,25 @@
           <div
             class="items-center hidden space-x-6 lg:flex text-clrNeutral-200"
           >
-            <a href="#" class="hover:text-clrNeutral-400">Login</a>
             <a
               href="#"
-              class="px-8 py-3 font-bold text-white rounded-full bg-cyan hover:opacity-70"
+              class="hover:text-clrNeutral-400 focus-visible:outline-black"
+              >Login</a
+            >
+            <a
+              href="#"
+              class="px-8 py-3 font-bold text-white rounded-full bg-cyan hover:opacity-70 focus-visible:outline-black"
               >Sign Up</a
             >
           </div>
           <!-- hamburger Button -->
           <button
             id="menu-btn"
-            class="block hamburger lg:hidden focus:outline-none"
+            class="block hamburger lg:hidden focus-visible:outline-black"
             aria-controls="menu"
             aria-expanded="false"
             aria-haspopup="false"
+            aria-label="menu"
           >
             <span class="hamburger-top" aria-hidden></span>
             <span class="hamburger-middle" aria-hidden></span>
@@ -63,13 +74,21 @@
           <div
             class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
           >
-            <a href="#" class="w-full text-center">Features</a
-            ><a href="#" class="w-full text-center">Pricing</a
-            ><a href="#" class="w-full text-center">Resources</a>
-            <a href="#" class="w-full pt-6 text-center border-t border-gray-400"
+            <a href="#" class="w-full text-center focus-visible:outline-white"
+              >Features</a
+            ><a href="#" class="w-full text-center focus-visible:outline-white"
+              >Pricing</a
+            ><a href="#" class="w-full text-center focus-visible:outline-white"
+              >Resources</a
+            >
+            <a
+              href="#"
+              class="w-full pt-6 text-center border-t border-gray-400 focus-visible:outline-white"
               >Login</a
             >
-            <a href="#" class="w-full py-3 text-center rounded-full bg-cyan"
+            <a
+              href="#"
+              class="w-full py-3 text-center rounded-full focus-visible:outline-white bg-cyan"
               >Sign Up</a
             >
           </div>
@@ -100,14 +119,14 @@
           <div class="mx-auto lg:mx-0 lg:!mt-14">
             <a
               href="#"
-              class="px-10 py-5 text-xl font-bold text-white rounded-full bg-cyan lg:py-4 hover:opacity-70"
+              class="px-10 py-5 text-xl font-bold text-white rounded-full bg-cyan focus-visible:outline-black lg:py-4 hover:opacity-70"
               >Get Started</a
             >
           </div>
         </div>
         <!-- image -->
         <div
-          class="max-lg:h-[21rem] md:max-lg:mx-auto max-md:bg-cover mb-4 md:w-[40rem] md:max-lg:bg-cover lg:mb-0 lg:w-5/12 working-illustration"
+          class="max-md:h-[21rem] md:max-lg:h-[26rem] md:max-lg:mx-auto max-md:bg-cover mb-4 md:w-[40rem] md:max-lg:bg-cover lg:mb-0 lg:w-5/12 working-illustration"
         ></div>
       </div>
     </section>
@@ -119,7 +138,7 @@
         <form
           action=""
           id="link-form"
-          class="relative space-y-8 px-6 py-5 flex flex-col w-full rounded-lg -mt-28 lg:px-16 lg:py-14 bg-darkViolet bg-[url('/images/bg-shorten-mobile.svg')] lg:bg-[url('/images/bg-shorten-desktop.svg')] bg-no-repeat bg-center md:flex-row md:space-y-0 md:space-x-3 lg:space-x-6"
+          class="bg-right-top relative space-y-8 px-6 py-5 flex flex-col w-full rounded-lg -mt-28 lg:px-16 lg:py-14 bg-darkViolet bg-[url('/images/bg-shorten-mobile.svg')] lg:bg-[url('/images/bg-shorten-desktop.svg')] bg-no-repeat md:flex-row md:space-y-0 md:space-x-3 lg:space-x-6"
         >
           <input
             type="text"
@@ -129,7 +148,7 @@
           />
           <button
             id="submit-btn"
-            class="px-10 py-3 font-bold text-white rounded-lg bg-cyan hover:bg-cyan/40 lg:text-xl focus:outline-none md:py-2"
+            class="px-10 py-3 font-bold text-white rounded-lg bg-cyan hover:bg-cyan/40 lg:text-xl focus-visible:outline-white md:py-2"
           >
             Shorten It!
           </button>
@@ -190,11 +209,11 @@
               <img src="/images/icon-brand-recognition.svg" alt="" />
             </div>
           </div>
-          <h5
+          <h3
             class="pt-6 text-xl font-bold text-center capitalize md:text-left"
           >
             Brand Recognition
-          </h5>
+          </h3>
           <p class="text-center text-gray-400 md:text-left">
             Boost your brand recognition with each click. Generic links don't
             mean a thing. Branded links help insti; confidence in your content.
@@ -213,11 +232,11 @@
               <img src="/images/icon-detailed-records.svg" alt="" />
             </div>
           </div>
-          <h5
+          <h3
             class="pt-6 text-xl font-bold text-center capitalize md:text-left"
           >
             Detailed records
-          </h5>
+          </h3>
           <p class="text-center text-gray-400 md:text-left">
             Gain insights into who is clicking your links. Knowing when and
             where people engage with your content helps inform better decisions.
@@ -237,11 +256,11 @@
               <img src="/images/icon-fully-customizable.svg" alt="" />
             </div>
           </div>
-          <h5
+          <h3
             class="pt-6 text-xl font-bold text-center capitalize md:text-left"
           >
             Fully customizable
-          </h5>
+          </h3>
           <p class="text-center text-gray-400 md:text-left">
             Improve brand awareness and content discverability through
             customizable links, supercharging audience engagement.
@@ -256,13 +275,13 @@
       class="py-20 lg:py-24 bg-darkViolet bg-[url('/images/bg-boost-desktop.svg')] bg-no-repeat bg-cover"
     >
       <div class="flex flex-col space-y-6 lg:p-2">
-        <h5
+        <h3
           class="mx-auto space-y-10 text-[1.625rem] font-bold text-center text-white lg:text-4xl"
         >
           Boost your links today
-        </h5>
+        </h3>
         <button
-          class="px-10 py-4 mx-auto text-lg font-bold text-white rounded-full lg:px-10 lg:py-5 bg-cyan hover:brightness-125 md:text-base md:py-3 focus:outline-none"
+          class="px-10 py-4 mx-auto text-lg font-bold text-white rounded-full lg:px-10 lg:py-5 bg-cyan hover:brightness-125 md:text-base md:py-3 focus-visible:outline-white"
         >
           Get Started
         </button>
@@ -284,13 +303,19 @@
             <div class="mb-5 font-bold text-white capitalize">Features</div>
 
             <div class="flex flex-col items-center space-y-3 md:items-start">
-              <a href="#" class="capitalize text-clrNeutral-200 hover-text-cyan"
+              <a
+                href="#"
+                class="capitalize text-clrNeutral-200 hover-text-cyan focus-visible:outline-white"
                 >Link shortening</a
               >
-              <a href="#" class="capitalize text-clrNeutral-200 hover-text-cyan"
+              <a
+                href="#"
+                class="capitalize focus-visible:outline-white text-clrNeutral-200 hover-text-cyan"
                 >Branded links</a
               >
-              <a href="#" class="capitalize text-clrNeutral-200 hover-text-cyan"
+              <a
+                href="#"
+                class="capitalize focus-visible:outline-white text-clrNeutral-200 hover-text-cyan"
                 >Analytics</a
               >
             </div>
@@ -299,16 +324,26 @@
           <!-- menu-2 -->
 
           <div class="flex flex-col items-center w-full md:items-start">
-            <div class="mb-5 font-bold text-white capitalize">Resources</div>
+            <div
+              class="mb-5 font-bold text-white capitalize focus-visible:outline-white"
+            >
+              Resources
+            </div>
 
             <div class="flex flex-col items-center space-y-3 md:items-start">
-              <a href="#" class="capitalize text-clrNeutral-200 hover-text-cyan"
+              <a
+                href="#"
+                class="capitalize text-clrNeutral-200 hover-text-cyan focus-visible:outline-white"
                 >Blog</a
               >
-              <a href="#" class="capitalize text-clrNeutral-200 hover-text-cyan"
+              <a
+                href="#"
+                class="capitalize text-clrNeutral-200 hover-text-cyan focus-visible:outline-white"
                 >Developers</a
               >
-              <a href="#" class="capitalize text-clrNeutral-200 hover-text-cyan"
+              <a
+                href="#"
+                class="capitalize text-clrNeutral-200 hover-text-cyan focus-visible:outline-white"
                 >support</a
               >
             </div>
@@ -316,19 +351,31 @@
 
           <!-- menu -3 -->
           <div class="flex flex-col items-center w-full md:items-start">
-            <div class="mb-5 font-bold text-white capitalize">Company</div>
+            <div
+              class="mb-5 font-bold text-white capitalize focus-visible:outline-white"
+            >
+              Company
+            </div>
 
             <div class="flex flex-col items-center space-y-3 md:items-start">
-              <a href="#" class="capitalize text-clrNeutral-200 hover-text-cyan"
+              <a
+                href="#"
+                class="capitalize focus-visible:outline-white text-clrNeutral-200 hover-text-cyan"
                 >About</a
               >
-              <a href="#" class="capitalize text-clrNeutral-200 hover-text-cyan"
+              <a
+                href="#"
+                class="capitalize focus-visible:outline-white text-clrNeutral-200 hover-text-cyan"
                 >Our Team</a
               >
-              <a href="#" class="capitalize text-clrNeutral-200 hover-text-cyan"
+              <a
+                href="#"
+                class="capitalize focus-visible:outline-white text-clrNeutral-200 hover-text-cyan"
                 >Careers</a
               >
-              <a href="#" class="capitalize text-clrNeutral-200 hover-text-cyan"
+              <a
+                href="#"
+                class="capitalize focus-visible:outline-white text-clrNeutral-200 hover-text-cyan"
                 >Contacts</a
               >
             </div>
@@ -337,16 +384,24 @@
 
         <!-- social container -->
         <div class="flex space-x-6">
-          <a href="#">
+          <a href="#" class="focus-visible:outline-white" aria-label="facebook">
             <img class="ficon" src="/images/icon-facebook.svg" alt="" />
           </a>
-          <a href="#">
+          <a href="#" class="focus-visible:outline-white" aria-label="twitter">
             <img class="ficon" src="/images/icon-twitter.svg" alt="" />
           </a>
-          <a href="#">
+          <a
+            href="#"
+            class="focus-visible:outline-white"
+            aria-label="pinterest"
+          >
             <img class="ficon" src="/images/icon-pinterest.svg" alt="" />
           </a>
-          <a href="#">
+          <a
+            href="#"
+            class="focus-visible:outline-white"
+            aria-label="instagram"
+          >
             <img class="ficon" src="/images/icon-instagram.svg" alt="" />
           </a>
         </div>
