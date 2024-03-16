@@ -9,66 +9,73 @@
   </head>
   <body>
     <!-- nav container -->
-    <nav class="relative pt-10 px-5 lg:pt-12 lg:px-4 mx-auto max-w-[72rem]">
-      <!-- flex container for all items -->
-      <div class="flex items-center justify-between">
-        <!-- flex container for logo/menu -->
-        <div class="flex items-center space-x-20">
-          <!-- logo -->
-          <img src="/images/logo.svg" alt="" />
-          <!-- left menu -->
-          <div class="hidden space-x-8 font-bold lg:flex">
-            <a class="text-clrNeutral-200 hover:text-clrNeutral-400" href="#"
-              >Features</a
+    <header>
+      <nav class="relative pt-10 px-5 lg:pt-12 lg:px-4 mx-auto max-w-[72rem]">
+        <!-- flex container for all items -->
+        <div class="flex items-center justify-between">
+          <!-- flex container for logo/menu -->
+          <div class="flex items-center space-x-20">
+            <!-- logo -->
+            <img src="/images/logo.svg" alt="" />
+            <!-- left menu -->
+            <div class="hidden space-x-8 font-bold lg:flex">
+              <a class="text-clrNeutral-200 hover:text-clrNeutral-400" href="#"
+                >Features</a
+              >
+              <a class="text-clrNeutral-200 hover:text-clrNeutral-400" href="#"
+                >Pricing</a
+              >
+              <a class="text-clrNeutral-200 hover:text-clrNeutral-400" href="#"
+                >Resources</a
+              >
+            </div>
+          </div>
+
+          <!-- right buttons menu -->
+          <div
+            class="items-center hidden space-x-6 lg:flex text-clrNeutral-200"
+          >
+            <div class="hover:text-clrNeutral-400">Login</div>
+            <a
+              href="#"
+              class="px-8 py-3 font-bold text-white rounded-full bg-cyan hover:opacity-70"
+              >Sign Up</a
             >
-            <a class="text-clrNeutral-200 hover:text-clrNeutral-400" href="#"
-              >Pricing</a
+          </div>
+          <!-- hamburger Button -->
+          <button
+            id="menu-btn"
+            class="block hamburger lg:hidden focus:outline-none"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-haspopup="false"
+          >
+            <span class="hamburger-top" aria-hidden></span>
+            <span class="hamburger-middle" aria-hidden></span>
+            <span class="hamburger-bottom" aria-hidden></span>
+          </button>
+        </div>
+        <!--mobile menu -->
+        <div
+          class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100"
+          id="menu"
+        >
+          <div
+            class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+          >
+            <a href="#" class="w-full text-center">Features</a
+            ><a href="#" class="w-full text-center">Pricing</a
+            ><a href="#" class="w-full text-center">Resources</a>
+            <a href="#" class="w-full pt-6 text-center border-t border-gray-400"
+              >Login</a
             >
-            <a class="text-clrNeutral-200 hover:text-clrNeutral-400" href="#"
-              >Resources</a
+            <a href="#" class="w-full py-3 text-center rounded-full bg-cyan"
+              >Sign Up</a
             >
           </div>
         </div>
-
-        <!-- right buttons menu -->
-        <div class="items-center hidden space-x-6 lg:flex text-clrNeutral-200">
-          <div class="hover:text-clrNeutral-400">Login</div>
-          <a
-            href="#"
-            class="px-8 py-3 font-bold text-white rounded-full bg-cyan hover:opacity-70"
-            >Sign Up</a
-          >
-        </div>
-        <!-- hamburger Button -->
-        <button
-          id="menu-btn"
-          class="block hamburger lg:hidden focus:outline-none"
-        >
-          <span class="hamburger-top" aria-hidden></span>
-          <span class="hamburger-middle" aria-hidden></span>
-          <span class="hamburger-bottom" aria-hidden></span>
-        </button>
-      </div>
-      <!--mobile menu -->
-      <div
-        class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100"
-        id="menu"
-      >
-        <div
-          class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
-        >
-          <a href="#" class="w-full text-center">Features</a
-          ><a href="#" class="w-full text-center">Pricing</a
-          ><a href="#" class="w-full text-center">Resources</a>
-          <a href="#" class="w-full pt-6 text-center border-t border-gray-400"
-            >Login</a
-          >
-          <a href="#" class="w-full py-3 text-center rounded-full bg-cyan"
-            >Sign Up</a
-          >
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <!-- hero section -->
     <section id="hero">
       <!-- hero container -->
@@ -112,7 +119,7 @@
         <form
           action=""
           id="link-form"
-          class="relative px-6 py-5 flex flex-col w-full space-y-4 rounded-lg -mt-28 lg:px-16 lg:py-14 bg-darkViolet bg-[url('/images/bg-shorten-mobile.svg')] lg:bg-[url('/images/bg-shorten-desktop.svg')] bg-no-repeat md:flex-row md:space-y-0 md:space-x-3 lg:space-x-6"
+          class="relative space-y-8 px-6 py-5 flex flex-col w-full rounded-lg -mt-28 lg:px-16 lg:py-14 bg-darkViolet bg-[url('/images/bg-shorten-mobile.svg')] lg:bg-[url('/images/bg-shorten-desktop.svg')] bg-no-repeat md:flex-row md:space-y-0 md:space-x-3 lg:space-x-6"
         >
           <input
             type="text"
@@ -121,6 +128,7 @@
             id="link-input"
           />
           <button
+            id="submit-btn"
             class="px-10 py-3 font-bold text-white rounded-lg bg-cyan hover:bg-cyan/40 lg:text-xl focus:outline-none md:py-2"
           >
             Shorten It!
@@ -129,67 +137,14 @@
           <!-- error messages -->
           <div
             id="err-msg"
-            class="absolute text-sm italic left-10 bottom-7 text-red"
+            class="absolute text-sm italic bottom-20 md:bottom-0 lg:left-10 lg:bottom-7 text-red"
           ></div>
         </form>
 
-        <!-- link-1
-        <div
-          class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
-        >
-          <p class="font-bold text-center text-clrNeutral-400 md:text-left">
-            https://frontendmentor.io
-          </p>
-
-          <div
-            class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0"
-          >
-            <div class="font-bold text-cyan">https://rel.ink/k4IKyk</div>
-            <button
-              class="p-2 px-8 text-white rounded-lg bg-cyan hover:opacity-70 focus:outline-none"
-            >
-              Copy
-            </button>
-          </div>
-        </div>
-        link-2
-        <div
-          class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
-        >
-          <p class="font-bold text-center text-clrNeutral-400 md:text-left">
-            https://twitter.com/frontendmentor
-          </p>
-
-          <div
-            class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0"
-          >
-            <div class="font-bold text-cyan">https//rel.ink/gxOXp9</div>
-            <button
-              class="p-2 px-8 text-white rounded-lg bg-darkViolet hover:opacity-70 focus:outline-none"
-            >
-              Copy
-            </button>
-          </div>
-        </div>
-        link-3
-        <div
-          class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
-        >
-          <p class="font-bold text-center text-clrNeutral-400 md:text-left">
-            https://linkedin.com/frontendmentor
-          </p>
-
-          <div
-            class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0"
-          >
-            <div class="font-bold text-cyan">https://rel.ink/gob3X9</div>
-            <button
-              class="p-2 px-8 text-white rounded-lg bg-cyan hover:opacity-70 focus:outline-none"
-            >
-              Copy
-            </button>
-          </div>
-        </div> -->
+        <section
+          id="generated-links"
+          class="space-y-4 shortened-links"
+        ></section>
       </div>
     </section>
 
